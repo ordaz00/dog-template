@@ -14,7 +14,7 @@ export default function BreedingCard(props){
                 <div className={css({display: props.display1, flexDirection: props.direction1, justifyContent: props.justify1, alignItems: props.align1,})} >
                     <img src={props.src2} alt={props.alt} height={props.imgHeight} width={props.imgWidth} />
                     <p className={css({fontSize: props.fontSize1, textAlign: props.textAlign, marginTop: props.marginTop1})}>FEMALE:</p>
-                    <p className={css({fontSize: props.fontSize2, textAlign: props.textAlign})}>{props.name2}</p>7
+                    <p className={css({fontSize: props.fontSize2, textAlign: props.textAlign})}>{props.name2}</p>
                 </div>
             </div>
             <div className={css({marginTop: props.marginTop})}>
