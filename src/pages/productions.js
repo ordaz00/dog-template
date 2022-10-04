@@ -1,10 +1,12 @@
 import MenuComponent from "../siteSpecificComponents/menuComponent";
 import DogsComponent from "../siteSpecificComponents/dogsComponent";
+import Stud2 from "../images/studs2.jpg"
+import Stud4 from "../images/studs4.jpg"
 
 export default function Productions(props){
     let productions = [
-        ["Tank","https://vrcpitbull.com/wp-content/uploads/2011/02/VAMPVAMP%E2%80%A2.jpg"],
-        ["Big Mac","https://www.rd.com/wp-content/uploads/2021/10/GettyImages-513392620-scaled-e1635191773380.jpg?fit=700,1024"]
+        ["Tank", Stud2],
+        ["Big Mac", Stud4]
     ]
     return (
         <div>

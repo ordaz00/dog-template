@@ -2,6 +2,8 @@ import * as React from 'react';
 import LeftTriangle from "./leftTriangle";
 import ReviewCard from "./reviewCard";
 import RightTriangle from "./rightTriangle";
+import Left from "../images/leftTriangle.jpg"
+import Right from "../images/rightTriangle.jpg"
 
 export default function ReviewCollection(props){
     let review = props.review;
@@ -60,7 +62,7 @@ export default function ReviewCollection(props){
             card1={card1}
             card2={card2}
             card3={card3}
-            src="https://i.ytimg.com/vi/Xq1T4sd4GdY/maxresdefault.jpg"
+            src={Left}
             alt="left triangle"
             imgHeight="30px"
             imgWidth="30px"
@@ -102,7 +104,7 @@ export default function ReviewCollection(props){
             card1={card1}
             card2={card2}
             card3={card3}
-            src="https://i.ytimg.com/vi/Xq1T4sd4GdY/maxresdefault.jpg"
+            src={Right}
             alt="right triangle"
             imgHeight="30px"
             imgWidth="30px"

@@ -3,6 +3,9 @@ import ReviewCollection from "../components/reviewCollection";
 import MissionComponent from "./missionComponent";
 import ThreeSectionWritingComponent from "./threeSectionWritingComponent";
 import TwoSectionWritingComponent from "./twoSectionWritingComponent";
+import Dog1 from "../images/dogImage1.jpg";
+import Dog2 from "../images/dogImage2.jpg";
+import Dog3 from "../images/dogImage3.jpg";
 
 export default function HomeComponent(props){
     let review = [
@@ -15,7 +18,7 @@ export default function HomeComponent(props){
 
     return(
         <div>
-            <ImageDiv height="700px" width="100%" src="https://www.thesprucepets.com/thmb/Aw_HvXl6Mv1riW8pm1NFTIYuUvo=/2122x1412/filters:no_upscale():max_bytes(150000):strip_icc()/AmericanPitBullTerrierTaraGregg500px-45c53270504940f394d7d4eb8da2c313.jpg" name="dogImage" />
+            <ImageDiv height="700px" width="100%" src={Dog1} name="dogImage" />
                 <ThreeSectionWritingComponent 
                 position="absolute" 
                 top="450px" 
@@ -31,7 +34,7 @@ export default function HomeComponent(props){
                 <button id="upcomingButton" onClick={() => props.update("breedings")}>
                     UPCOMING BREEDINGS
                 </button>
-            <ImageDiv height="700px" width="100%" src="https://media.istockphoto.com/photos/siberian-husky-in-the-fog-picture-id1204265029?k=20&m=1204265029&s=612x612&w=0&h=soxtcSF4KBZp35MqKeQByonyNlkXVrKWfHW2z_asFw4=" name="dogImage" />
+            <ImageDiv height="700px" width="100%" src={Dog2} name="dogImage" />
                 <TwoSectionWritingComponent
                 position="absolute" 
                 top="900px" 
@@ -42,7 +45,7 @@ export default function HomeComponent(props){
                 message="Message about your company"
                 color="white"
                 />
-            <ImageDiv height="700px" width="100%" src="https://www.perfectdogbreeds.com/wp-content/uploads/2019/03/Pitbull-Dog.jpg" name="dogImage" />
+            <ImageDiv height="700px" width="100%" src={Dog3} name="dogImage" />
             <MissionComponent
             display="flex"
             direction="column"
