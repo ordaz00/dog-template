@@ -13,10 +13,6 @@ export default function HomeComponent(props){
         ["Zach and Carolina Bullies have always been there through the years!","We worked with Zach at Carolina Bullies about 4 years ago when we were picking a bully to add to our family. I have a little boy and we also have a pitbull, and Zach was so great letting me bring my Son out to meet the pups and see the 'big dogs' as he called them! Watching my Son play with the dogs really made me understand their temperament and what amazing family dogs they are! Odin just turned 4 and he and my 9 year old Son are best of friends. Zach and Carolina Bullies have always been there through the years supporting me in raising Odin in regard to best practices for training and best food to feed. I know I can always reach out to him with any questions and he is always available and willing to help. Odin has completed our family and not only am I honored to own a dog from Carolina Bullies, but I am also grateful to Zach for his personal and continued support in raising our dog. Thank you, Zach!","Baily R."]
     ]
 
-    function changePage(page){
-        window.location = "/" + page;
-    }
-
     return(
         <div>
             <ImageDiv height="700px" width="100%" src="https://www.thesprucepets.com/thmb/Aw_HvXl6Mv1riW8pm1NFTIYuUvo=/2122x1412/filters:no_upscale():max_bytes(150000):strip_icc()/AmericanPitBullTerrierTaraGregg500px-45c53270504940f394d7d4eb8da2c313.jpg" name="dogImage" />

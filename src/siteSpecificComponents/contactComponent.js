@@ -35,7 +35,7 @@ export default function ContactComponent(){
             <ContactCard 
             position="relative"
             top="-175px"
-            left="300px"
+            left="0px"
             resize="none"
             display="flex"
             direction1="column"

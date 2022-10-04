@@ -32,8 +32,8 @@ export default function ReviewCollection(props){
             backgroundColor="rgba(35,35,35,1)"
             minHeight="300px"
             minWidth="700px"
-            marginLeft="25px"
-            marginRight="25px"
+            marginLeft="0px"
+            marginRight="0px"
             marginCardTop="150px"
             titleSize="24px"
             messageSize="16px"
@@ -49,6 +49,23 @@ export default function ReviewCollection(props){
             marginBottom="25px"
             name={review[card1][2]}
             />
+            <LeftTriangle
+            display="flex"
+            direction="column"
+            justify="center"
+            align="center"
+            height="100%"
+            minWidth="80px"
+            leftFunc={left}
+            card1={card1}
+            card2={card2}
+            card3={card3}
+            src="https://i.ytimg.com/vi/Xq1T4sd4GdY/maxresdefault.jpg"
+            alt="left triangle"
+            imgHeight="30px"
+            imgWidth="30px"
+            rotate="-90deg"
+            />
             <ReviewCard 
             display="flex"
             direction="column"
@@ -57,8 +74,8 @@ export default function ReviewCollection(props){
             backgroundColor="rgba(35,35,35,1)"
             minHeight="300px"
             minWidth="700px"
-            marginLeft="25px"
-            marginRight="25px"
+            marginLeft="0px"
+            marginRight="0px"
             marginCardTop="150px"
             titleSize="24px"
             messageSize="16px"
@@ -74,6 +91,23 @@ export default function ReviewCollection(props){
             marginBottom="25px"
             name={review[card2][2]}
             />
+            <RightTriangle
+            display="flex"
+            direction="column"
+            justify="center"
+            align="center"
+            height="100%"
+            minWidth="80px"
+            right={right}
+            card1={card1}
+            card2={card2}
+            card3={card3}
+            src="https://i.ytimg.com/vi/Xq1T4sd4GdY/maxresdefault.jpg"
+            alt="right triangle"
+            imgHeight="30px"
+            imgWidth="30px"
+            rotate="90deg" 
+            />
             <ReviewCard 
             display="flex"
             direction="column"
@@ -82,7 +116,7 @@ export default function ReviewCollection(props){
             backgroundColor="rgba(35,35,35,1)"
             minHeight="300px"
             minWidth="700px"
-            marginLeft="25px"
+            marginLeft="0px"
             marginRight="25px"
             marginCardTop="150px"
             titleSize="24px"
@@ -98,38 +132,6 @@ export default function ReviewCollection(props){
             marginTop="15px"
             marginBottom="25px"
             name={review[card3][2]}
-            />
-            <LeftTriangle
-            position="absolute" 
-            top="2540px" 
-            left="380px"
-            height="50px"
-            width="50px"
-            leftFunc={left}
-            card1={card1}
-            card2={card2}
-            card3={card3}
-            src="https://i.ytimg.com/vi/Xq1T4sd4GdY/maxresdefault.jpg"
-            alt="left triangle"
-            imgHeight="30px"
-            imgWidth="30px"
-            rotate="-90deg"
-            />
-            <RightTriangle
-            position="absolute" 
-            top="2540px"
-            left="1130px"
-            height="50px"
-            width="50px"
-            right={right}
-            card1={card1}
-            card2={card2}
-            card3={card3}
-            src="https://i.ytimg.com/vi/Xq1T4sd4GdY/maxresdefault.jpg"
-            alt="right triangle"
-            imgHeight="30px"
-            imgWidth="30px"
-            rotate="90deg" 
             />
         </div>
     );

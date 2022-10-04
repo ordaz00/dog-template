@@ -6,10 +6,10 @@ export default function QAComponent(props){
     let [css] = useStyletron();
 
     function openClose(){
-        (state == 0) ? (changeState(1)):(changeState(0));
+        (state === 0) ? (changeState(1)):(changeState(0));
     }
     
-    if(state == 0){
+    if(state === 0){
         return(
             <div className={css({display: props.display, flexDirection: props.direction1, justifyContent: props.justify1, alignItems: props.align1, height: props.height1, width: props.width1, backgroundColor: props.backgroundColor1, marginBottom: props.marginBottom1})} onClick={openClose}>
                 <div className={css({display: props.display, flexDirection: props.direction2, justifyContent: props.justify2, alignItems: props.align2, height: props.height2, width: props.width2, marginTop: props.marginTop1, marginBottom: props.marginBottom2})}>
