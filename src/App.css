@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filler{
+  background-color: white;
+  height: 500px;
+  width: 100%;
+}
+
+#menu{
+  width: 100%;
+  height:150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuButton{
+  color: white;
+  padding: 14px 16px;
+  border: none;
+  background-color: black;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.menuButton:hover{
+  background-color: rgb(100, 100, 100);
+}
+
+#breedingButton{
+  background-color: rgba(220,1,1,1);
+  margin-right: 25px;
+}
+
+#breedingButton:hover{
+  background-color: rgba(250,1,1,1);
+}
+
+#upcomingButton{
+  position: absolute;
+  top: 620px;
+  left: 50px;
+  color: white;
+  padding: 14px 16px;
+  border: none;
+  background-color: rgba(220,1,1,1);;
+  font-size: 16px;
+  height: 50px;
+}
+
+#upcomingButton:hover{
+  background-color: rgba(250,1,1,1);
+}
+
+.review{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 650px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.cardCollection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  background-color: black;
+}
+
+#faq{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  min-height: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
-  to {
-    transform: rotate(360deg);
+  body {
+    color: white;
+    background: black;
   }
 }

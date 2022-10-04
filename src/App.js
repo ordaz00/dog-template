@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import Home from './pages/home';
+import Breedings from "./pages/breedings.js"
+import Contact from "./pages/contact.js"
+import Faq from "./pages/faq.js"
+import Females from "./pages/females.js"
+import Productions from "./pages/productions.js"
+import Puppies from "./pages/puppies.js"
+import Studs from "./pages/studs"
 
-function App() {
+export default function App(){
+  let [page, changePage] = React.useState("main")
+  
+  function updatePage(newPage){
+    changePage(newPage);
+  }
+
+  let dict = {"main": <Home updatePage = {updatePage}/>, "breedings": <Breedings updatePage = {updatePage} /> , "contact": <Contact updatePage = {updatePage}/>, "faq": <Faq updatePage = {updatePage}/>, "females": <Females updatePage = {updatePage}/>, "productions": <Productions updatePage = {updatePage}/>, "puppies": <Puppies updatePage = {updatePage}/>, "studs": <Studs updatePage = {updatePage}/>};
+  let webPage = dict[page];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {webPage}
     </div>
-  );
+  )
 }
-
-export default App;
