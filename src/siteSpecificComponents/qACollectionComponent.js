@@ -45,6 +45,7 @@ export default function QACollectionComponent(props){
                 marginTop2="45px"
                 marginTop3="15px"
                 marginLeft="15px"
+                color="white"
                 />
             ))}
         </div>   

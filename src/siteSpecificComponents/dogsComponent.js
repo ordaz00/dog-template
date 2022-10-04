@@ -15,6 +15,7 @@ export default function DogsComponent(props){
                 messageSize="20px"
                 title={props.title}
                 message={props.message}
+                color="white"
                 />
             <TitleComponent 
             display="flex"
@@ -28,6 +29,7 @@ export default function DogsComponent(props){
             barBackgroundColor="rgba(220,1,1,1)"
             barHeight="7px"
             barWidth="200px"
+            color="white"
             />
             <CardCollectionComponent 
             cards={props.cards}

@@ -26,6 +26,7 @@ export default function HomeComponent(props){
                 welcome="Welcome To:"
                 title="Name Of Your Company"
                 message="Welcome Message"
+                color="white"
                 />
                 <button id="upcomingButton" onClick={() => props.update("breedings")}>
                     UPCOMING BREEDINGS
@@ -39,6 +40,7 @@ export default function HomeComponent(props){
                 messageSize="20px"
                 title="About Your Company"
                 message="Message about your company"
+                color="white"
                 />
             <ImageDiv height="700px" width="100%" src="https://www.perfectdogbreeds.com/wp-content/uploads/2019/03/Pitbull-Dog.jpg" name="dogImage" />
             <MissionComponent
@@ -61,6 +63,7 @@ export default function HomeComponent(props){
             messageWidth="650px"
             textAlign="center"
             marginTop="15px"
+            color="white"
             />
             <ReviewCollection
             review={review}

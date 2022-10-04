@@ -16,6 +16,7 @@ export default function CardCollectionComponent(props){
               imgWidth="300px"
               fontSize="32px"
               textAlign="center"
+              color="white"
               />
             ))}
         </div>
