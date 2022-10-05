@@ -124,6 +124,7 @@ a {
     height: 40px;
   }
 }
+
 @media screen and (max-width: 1050px) {
   #upcomingButton{
     top: 475px;

@@ -4,7 +4,7 @@ export default function BreedingCard(props){
     let [css] = useStyletron();
 
     return(
-        <div className={css({display: props.display, flexDirection: props.direction1, justifyContent: props.justify1, alignItems: props.align1, height: props.height1, width: props.width1, backgroundColor: props.backgroundColor})} >
+        <div className={css({display: props.display, flexDirection: props.direction1, justifyContent: props.justify1, alignItems: props.align1, height: props.height1, width: props.width1, backgroundColor: props.backgroundColor, marginBottom: props.marginBottom})} >
             <div className={css({display: props.display, flexDirection: props.direction2, justifyContent: props.justify2, alignItems: props.align2, height: props.height2, width: props.width2})}>
                 <div className={css({display: props.display1, flexDirection: props.direction1, justifyContent: props.justify1, alignItems: props.align1,})} >
                     <img src={props.src1} alt={props.alt} height={props.imgHeight} width={props.imgWidth} />
