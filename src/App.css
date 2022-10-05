@@ -62,7 +62,7 @@ a {
   color: white;
   padding: 14px 16px;
   border: none;
-  background-color: rgba(220,1,1,1);;
+  background-color: rgba(220,1,1,1);
   font-size: 16px;
   height: 50px;
 }
@@ -74,11 +74,19 @@ a {
 .review{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   height: 650px;
   overflow: hidden;
   background-color: black;
+}
+
+#middle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 150px;
 }
 
 .cardCollection{
@@ -104,6 +112,121 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .menuButton{
+    padding: 10px 12px;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #upcomingButton{
+    top: 475px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .menuButton{
+    padding: 8px 10px;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 40px;
+  }
+  #menu{
+    height:100px;
+  }
+  #upcomingButton{
+    top: 425px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .menuButton{
+    padding: 8px 10px;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 40px;
+  }
+  #menu{
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #upcomingButton{
+    top: 335px;
+  }
+  .review{
+    height: 450px;
+  }
+  #middle{
+    margin-top: 100px;
+  }
+  #faq{
+    margin-top: 25px;
+    min-height: 500px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #upcomingButton{
+    top: 335px;
+    padding: 10px 12px;
+    font-size: 12px;
+    height: 40px;
+  }
+}
+
+
+
+@media screen and (max-width: 630px) {
+  .menuButton{
+    padding: 4px 5px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 30px;
+  }
+  #menu{
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #upcomingButton{
+    top: 270px;
+    padding: 6px 8px;
+    font-size: 10px;
+    height: 30px;
+  }
+  .review{
+    height: 300px;
+  }
+  #middle{
+    margin-top: 50px;
+  }
+  #faq{
+    min-height: 425px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .menuButton{
+    padding: 2px 3px;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 25px;
+  }
+  #menu{
+    height: 75px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -7,14 +7,14 @@ export default function CardCollectionComponent(props){
         <div className="cardCollection">
             {Cards.map(cards => (
               <ImgCard
-              height="350px"
-              width="300px"
+              height={props.height}
+              width={props.width}
               message={cards[0]}
               src={cards[1]}
               alt="dogImg"
-              imgHeight="300px"
-              imgWidth="300px"
-              fontSize="32px"
+              imgHeight={props.imgHeight}
+              imgWidth={props.imgWidth}
+              fontSize={props.fontSize}
               textAlign="center"
               color="white"
               />
